@@ -15,6 +15,12 @@ module HelloWorldRails
     #
     # These settings can be overridden in specific environments using the files
     # in config/environments, which are processed later.
+    config.generators do |g|
+      g.javascripts false
+      g.stylesheets false
+      g.helper false
+      g.test_framework false
+    end
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
