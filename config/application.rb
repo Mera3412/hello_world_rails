@@ -20,7 +20,10 @@ module HelloWorldRails
       g.stylesheets false
       g.helper false
       g.test_framework false
+      g.template_engine false
     end
+
+    config.api_only = true
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
