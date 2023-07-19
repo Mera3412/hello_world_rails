@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :user do
     name{Faker::Name.name}
-    account{Faker::Internet.username}
-    email{Faker::Internet.email}
+    sequence(:account) { |n| "#{n}_#{Faker::Internet.username}" }
+    sequence(:email){ |n| "#{n}_#{Faker::Internet.email}"}
   end
 end
